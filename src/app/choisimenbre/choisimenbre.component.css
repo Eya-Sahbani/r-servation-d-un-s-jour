@@ -1,0 +1,29 @@
+.divclass{
+    margin-top: 50px;
+    margin-left: 31%;
+    
+}
+img{
+    height: 290px;
+    width: 300px;
+}
+button{
+    margin-left: 40px;
+    
+}
+.displayclass{
+    display: inline;
+}
+.form{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 100px;
+}
+.display{
+    display: inline-block;
+}
+.put{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+

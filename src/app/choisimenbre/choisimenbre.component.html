@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="form">
+    
+   <h6>Matricule: {{emp.id}}</h6>
+   <br>
+    <h6>Situation Familaire: {{emp.situation_familaire}}</h6>
+  
+    <br>
+    <h6>Nom: {{emp.nom}}</h6>
+    <br>
+    <h6>Prénom: {{emp.prenom}}</h6>
+    
+    <br>
+    <h6>Affectation: {{emp.affectation}}</h6>
+    <br>
+   
+ 
+  
+   <form action="" [formGroup]="formreserv">
+    
+    <div class="form-check" *ngIf="emp.conjoint!">
+    <input class="form-check-input" type="checkbox" [value]="emp.conjoint" formControlName="conjoint" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+        {{emp.conjoint}}
+    </label>
+  </div>
+  <div class="form-check" *ngIf="emp.prenomenfant1!">
+    <input class="form-check-input" type="checkbox" value="{{emp.ageenfant1}}" formControlName="enfant1" id="flexCheckChecked" >
+    <label class="form-check-label" for="flexCheckChecked">
+        {{emp.prenomenfant1}} (age: {{emp.ageenfant1}})
+    </label>
+  </div>
+  <div class="form-check" *ngIf="emp.prenonenfant2!">
+    <input class="form-check-input" type="checkbox" value="{{emp.ageenfant2}}" formControlName="enfant2" id="flexChckChecked" >
+    <label class="form-check-label" for="flexChckChecked">
+        {{emp.prenonenfant2}} (age: {{emp.ageenfant2}})
+    </label>
+  </div>
+  <div class="form-check" *ngIf="emp.prenonenfant3!">
+    <input class="form-check-input" type="checkbox" value="{{emp.ageenfant3}}" formControlName="enfant3" id="flxCheckChecked" >
+    <label class="form-check-label" for="flxCheckChecked">
+        {{emp.prenonenfant3}} (age: {{emp.ageenfant3}})
+    </label>
+  </div>
+  <div>
+    <label for="datemin">Date debut:<input type="date" class="put" id="datemin" name="datemin" formControlName="date_debut" min="2000-01-02"></label>
+  <label for="nembreN">Nembre de nuit<input type="number" class="put" id="nembreN" min="1" max="7" formControlName="nembre_nuit"></label>
+  </div>
+  <div class="alert alert-danger" *ngIf="!formreserv.pristine && formreserv.controls['date_debut'].errors?.['required']" role="alert">
+    Date début est nécessaire
+  </div>
+  <div class="alert alert-danger" *ngIf="!formreserv.pristine && formreserv.controls['nembre_nuit'].errors?.['required']" role="alert">
+    Nembre_nuit est nécessaire
+  </div>
+  
+
+  
+</form>
+</div>
+    <div class="card mb-3 divclass" style="max-width: 570px;" *ngFor="let htl of hotels">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="htl.image" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Hotel {{htl.nom}}</h5>
+              <h6 class="card-title">Agence:  {{htl.agence}}</h6>
+              
+                
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/> 
+              </svg>
+              <h6 class="card-title"> {{htl.gouvernerat}}</h6>
+          
+            </div>
+              <p class="card-text">Prix Nuitée Adulte: {{htl.prixadult}} DT</p>
+              <p class="card-text">Prix Nuitée Enfant (< 12ans):  {{htl.prixenfant}} DT</p>
+              <p class="card-text">Prix Nuitée Bébé (< 2ans): 0 DT  </p>
+              <div class="">
+                <div class="displayclass">
+                <button type="button" (click)="calculer(htl)" class="btn btn-primary btn-sm">Calculer</button>
+              </div>
+              <div class="displayclass"><p class="displayclass">{{prix}}DT</p></div>
+              
+              <button type="button" (click)="reserver(htl)" class="btn btn-primary btn-sm">Reserver</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    
+</body>
+</html>

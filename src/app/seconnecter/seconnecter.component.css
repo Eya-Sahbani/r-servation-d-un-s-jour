@@ -1,0 +1,36 @@
+.divconnecter{
+    width: 30%;
+    margin-left: 35%;
+    border: 1px solid;
+    border-radius: 8px;
+    margin-top: 150px;
+    margin-bottom: 220px;
+}
+input{
+    border: 1px solid;
+    border-radius: 5px; 
+    margin-top: 15px;  
+    margin-bottom: 25px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    width: 350px;
+    margin-left: 20px;
+    ;
+}
+label{
+    font-size: 20px;
+    margin-left: 20px;
+  
+}
+button{
+    margin-bottom: 15px;
+    margin-left: 300px;
+    padding-top:  5px ;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}

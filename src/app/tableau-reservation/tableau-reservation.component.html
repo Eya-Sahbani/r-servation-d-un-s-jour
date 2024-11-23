@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <table class="table table-striped">
+        <thead>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Conjoint</th>
+            <th colspan="2">Enfant1
+                
+            </th>
+            <th colspan="2"> Enfant2</th>
+            <th colspan="2">Enfant3</th>
+            <th >Hotel</th>
+
+        </thead>
+        <thead><th>
+
+        </th>
+        <th></th>
+        <th></th>
+        <th>Nom</th>
+        <th>Age</th>
+        <th>Nom</th>
+        <th>Age</th>
+        <th>Nom</th>
+        <th>Age</th>
+        <th>Nom d'hotel</th>
+        <th>Agence</th>
+        <th>Gouvernerat</th>
+        <th>Date</th>
+        <th>Nombre de nuit</th>
+        <th>Prix total</th>
+    </thead>
+        <tbody>
+            <tr *ngFor="let resrv of reservation">
+               <td>{{resrv.nom}}</td>
+               <td>{{resrv.prenom}}</td>
+               <td>{{resrv.conjoint}}</td>
+               <td>{{resrv.enfant1prenom}}</td>
+               <td>{{resrv.enfant1age}}</td>
+               <td>{{resrv.enfant2prenom}}</td>
+               <td>{{resrv.enfant2age}}</td>
+               <td>{{resrv.enfant3prenom}}</td>
+               <td>{{resrv.enfant3age}}</td>
+               <td>{{resrv.hotel}}</td>
+               <td>{{resrv.agence}}</td>
+               <td>{{resrv.gouvernerat}}</td>
+               <td>{{resrv.dated}}</td>
+               <td>{{resrv.nembreN}}</td>
+               <td>{{resrv.prix}} DT</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="bottonexporter">
+        <button type="button" class="btn btn-primary">Exporter</button>
+    </div>
+    
+</body>
+</html>

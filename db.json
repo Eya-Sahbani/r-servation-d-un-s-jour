@@ -1,0 +1,211 @@
+{
+  "hotels": [
+    {
+      "id": "1",
+      "agence": "Sun tavel",
+      "nom": "Mouradi",
+      "gouvernerat": "Hammamet",
+      "prixadult": 280,
+      "prixenfant": 150,
+      "image": "../../assets/images/OIP.jpeg"
+    },
+    {
+      "id": "2",
+      "agence": "Sun tavel",
+      "nom": "Solaria",
+      "gouvernerat": "Hammamet",
+      "prixadult": 220,
+      "prixenfant": 160,
+      "image": "../../assets/images/th.jpeg"
+    },
+    {
+      "id": "3",
+      "agence": "Sun tavel",
+      "nom": "Movempick",
+      "gouvernerat": "Sousse",
+      "prixadult": 450,
+      "prixenfant": 220,
+      "image": "../../assets/images/sousse.jpeg"
+    },
+    {
+      "id": "4",
+      "agence": "Sun tavel",
+      "nom": "Eden",
+      "gouvernerat": "Mahdia",
+      "prixadult": 220,
+      "prixenfant": 140,
+      "image": "../../assets/images/mahdia1.jpeg"
+    },
+    {
+      "id": "5",
+      "agence": "Sun tavel",
+      "nom": "top",
+      "gouvernerat": "monastir",
+      "prixadult": 300,
+      "prixenfant": 200,
+      "image": "../../assets/images/mahdia2.jpeg"
+    },
+    {
+      "id": "6",
+      "agence": "Sun tavel",
+      "nom": "Mouradi",
+      "gouvernerat": "Djeba",
+      "prixadult": 320,
+      "prixenfant": 220,
+      "image": "../../assets/images/djrba.jpeg"
+    },
+    {
+      "id": "7",
+      "agence": "Sun tavel",
+      "nom": "Hafsi",
+      "gouvernerat": "Djerba",
+      "prixadult": 320,
+      "prixenfant": 320,
+      "image": "../../assets/images/sousse1.jpeg"
+    },
+    {
+      "id": "8",
+      "agence": "Sun tavel",
+      "nom": "Loulou",
+      "gouvernerat": "Djerba",
+      "prixadult": 270,
+      "prixenfant": 200,
+      "image": "../../assets/images/djerba3.jpeg"
+    },
+    {
+      "id": "9",
+      "agence": "Bonvoyage",
+      "nom": "Mouradi",
+      "gouvernerat": "Hammamet",
+      "prixadult": 260,
+      "prixenfant": 160,
+      "image": "../../assets/images/R.jpg"
+    },
+    {
+      "id": "10",
+      "agence": "Bonvoyage",
+      "nom": "Marco polo",
+      "gouvernerat": "Hammamet",
+      "prixadult": 400,
+      "prixenfant": 320,
+      "image": "../../assets/images/Hotel.jpg"
+    },
+    {
+      "id": "11",
+      "agence": "Bonvoyage",
+      "nom": "Lela baya",
+      "gouvernerat": "Djerba",
+      "prixadult": 280,
+      "prixenfant": 200
+    },
+    {
+      "id": "12",
+      "agence": "Bonvoyage",
+      "nom": "Pearl",
+      "gouvernerat": "Sousse",
+      "prixadult": 420,
+      "prixenfant": 300
+    },
+    {
+      "id": "13",
+      "agence": "Bonvoyage",
+      "nom": "kantaoui",
+      "gouvernerat": "Sousse",
+      "prixadult": 280,
+      "prixenfant": 220
+    }
+  ],
+  "employer": [
+    {
+      "nom": "Achref",
+      "prenom": "Ben Ayed",
+      "affectation": "Direction Audit",
+      "situation_familaire": "Marié",
+      "conjoint": "Yosra",
+      "ageenfant1": 15,
+      "prenomenfant1": "Ahmed",
+      "prenonenfant2": "Younes",
+      "ageenfant2": 10,
+      "id": "101"
+    },
+    {
+      "nom": "Ridha",
+      "prenom": "Mohamed",
+      "affectation": "Direction Commercial",
+      "situation_familaire": "Célibataire",
+      "conjoint": null,
+      "ageenfant1": null,
+      "prenomenfant1": null,
+      "prenonenfant2": null,
+      "ageenfant2": null,
+      "id": "105"
+    },
+    {
+      "nom": "Asma",
+      "prenom": "Mansouri",
+      "affectation": "Direction Qualité",
+      "situation_familaire": "Marié",
+      "conjoint": "Mohammed",
+      "ageenfant1": null,
+      "prenomenfant1": null,
+      "prenonenfant2": null,
+      "ageenfant2": null,
+      "id": "106"
+    },
+    {
+      "nom": "Anissa",
+      "prenom": "Louati",
+      "affectation": "Direction Ressources Humaines",
+      "situation_familaire": "Marié",
+      "conjoint": "Anouar",
+      "ageenfant1": 3,
+      "prenomenfant1": "Aman",
+      "prenonenfant2": "Dali",
+      "ageenfant2": 6,
+      "prenonenfant3": "Lina",
+      "ageenfant3": 2,
+      "id": "107"
+    }
+  ],
+  "reservation": [
+    {
+      "id": "d9ce",
+      "nom": "Achref",
+      "prenom": "Ben Ayed",
+      "dated": "2024-08-28",
+      "nembreN": 2,
+      "hotel": "Solaria",
+      "prix": 1200,
+      "gouvernerat": "Hammamet",
+      "agence": "Sun tavel",
+      "conjoint": "Yosra",
+      "enfant1prenom": "Younes",
+      "enfant1age": 10
+    },
+    {
+      "id": "f710",
+      "nom": "Ridha",
+      "prenom": "Mohamed",
+      "dated": "2024-08-30",
+      "nembreN": 2,
+      "hotel": "Mouradi",
+      "prix": 560,
+      "gouvernerat": "Hammamet",
+      "agence": "Sun tavel"
+    },
+    {
+      "id": "5716",
+      "nom": "Anissa",
+      "prenom": "Louati",
+      "dated": "2024-08-30",
+      "nembreN": 2,
+      "hotel": "Solaria",
+      "prix": 1520,
+      "gouvernerat": "Hammamet",
+      "agence": "Sun tavel",
+      "conjoint": "Anouar",
+      "enfant1prenom": "Dali",
+      "enfant1age": 6
+    }
+  ]
+}
